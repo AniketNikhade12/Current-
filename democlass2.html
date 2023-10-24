@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+         function create(){ 
+            var inputTag= document.createElement("input")
+        console.log(inputTag);
+
+        var div= document.getElementsByTagName('body')[0]
+        div.appendChild(inputTag)
+        var atr= document.getElementsByTagName('input')[0]
+        atr.setAttribute("value"," ")
+        var btn=document.createElement("button")
+        var txtbtn= document.createTextNode('view')
+        btn.appendChild(txtbtn)
+        div.appendChild(btn)
+        
+        var _btn=document.getElementsByTagName("button")[0]
+        _btn.setAttribute('onclick','submit()')
+         }
+         
+
+     create()
+     function submit(){
+        var Callinput= document.getElementsByTagName('input')[0].value
+        console.log(Callinput);
+        var div= document.getElementsByTagName('body')[0]
+        var txt= document.createTextNode(Callinput)
+
+        var _head= document.createElement('h1') 
+        _head.appendChild(txt)  
+        div.appendChild(_head)
+    }
+    </script>
+   
+</body>
+</html>

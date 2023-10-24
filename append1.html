@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+
+    <script>
+
+        // print hello world
+        var para= document.getElementsByTagName('p')[0];
+        console.log(para);
+
+        // Create Element H3 & Select it
+        var para2=document.createElement('H3');
+        console.log(para2);
+          
+        // Select document 
+        var _body=document.body;
+        console.log(_body);
+       
+        // add H3 tag in document(body)
+      _body.appendChild(para2);
+      console.log(para2);
+    </script>
+</body>
+</html>

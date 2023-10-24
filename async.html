@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async function prm(){
+        //     console.log("i am 1");
+        //     console.log("i am 2");
+
+        //     await fetch('https://jsonplaceholder.typicode.com/users')
+        //     .then(response => response.json())
+        //     .then(json => console.log(json))
+
+        //     await console.log("i am 4");
+        //     console.log("i am 3");
+             
+        // }
+        // console.log("i am 5");
+        // prm()
+        // console.log("i am 6");
+
+        async function prm(){
+            console.log("i am 1");
+            console.log("i am 2");
+
+            await fetch('https://jsonplaceholder.typicode.com/users')
+            .then(Response => Response.json())
+            .then(json => console.log(json))
+
+            console.log("i am 4");
+            console.log("i am 3");
+
+            
+        }
+        console.log("i am 5");
+        prm()
+        console.log("i am 6");
+    </script>
+</body>
+</html>

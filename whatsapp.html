@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <section style="display: flex;">
+        <div class="Screen" style="display: flex
+        ;">
+<div class="lt"></div>
+<div class="rt"></div>
+
+        </div>
+        <div class="btn">
+         <div class="lt">
+            <input type="text" name="id">
+            <button onclick="left()">send</button>
+         </div>
+         <div class="rt">
+            <input type="text" name="id">
+            <button onclick="right()">send</button>
+         </div>
+        </div>
+    </section>
+    <script>
+        function left(){
+            var div=document.getElementsByClassName('lt')[0]
+            var INPUT= document.getElementsByTagName('input')[0].value
+            var tag=document.createElement('p')
+            var txt=document.createTextNode(INPUT)
+            console.log(INPUT);
+            tag.appendChild(txt)
+            div.appendChild(tag)
+            console.log(div);
+        }
+        function right(){
+            var div1=document.getElementsByClassName('rt')[0]
+            var INPUT= document.getElementsByTagName('input')[1].value
+            var tag=document.createElement('p')
+            var txt=document.createTextNode(INPUT)
+            console.log(INPUT);
+            tag.appendChild(txt)
+            div1.appendChild(tag)
+            console.log(div);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px black; ">
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="Contact"><br>
+        <input type="text" placeholder="Email"><br>
+        <input type="button" value="Submit" onclick="call()">
+    </div>
+    <div>
+        <p></p>
+        <p1></p>
+        <p2></p>
+    </div>
+    <script>
+       function call(){
+        
+        var tag=  document.getElementsByTagName('input')[0].value
+        var txt=  document.getElementsByTagName('input')[1].value
+        var test=  document.getElementsByTagName('input')[2].value
+         var ele = document.createElement(tag)
+          
+         
+         var eletag = document.createTextNode(tag)
+         var eletxt = document.createTextNode(txt)
+        var eletest = document.createTextNode(test)
+          
+          console.log(eletag);
+          console.log(eletxt);
+          console.log(eletest);
+          
+          var name=document.getElementsByTagName('p')[0]
+          var contact=document.getElementsByTagName('p')[1]       
+          var email=document.getElementsByTagName('p')[2]
+
+
+          name.appendChild(eletag)
+          console.log(tag);
+          
+          contact.appendChild(eletxt)
+          console.log(txt);
+
+          email.appendChild(eletest)
+          console.log(test);
+
+
+
+          
+       }
+    </script>
+</body>
+</html>

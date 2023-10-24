@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div > 
+        <input type="text" placeholder="Enter NAme">
+        <input type="text" placeholder="Enter Text">
+        <input type="button" value="Create" onclick="Make()">
+    </div>
+    <script>
+        // var tag = document.createElement("Aniket")
+        // console.log(tag);
+        // var txt = document.createTextNode("Techrel")
+        // console.log(txt);
+
+    // var button= document.createElement("Submit")
+    // console.log(button);
+
+    //     tag.appendChild(txt)
+    //     console.log(tag);
+
+    //     var div = document.getElementById('box')[0]
+    //     div.appendChild(tag)
+    //     var div = document.getElementById('box')[0]
+    //     div.appendChild(txt)
+    //     var div = document.getElementById('box')[0]
+    //     div.appendChild(button)
+
+        // function Make(){
+        //   var tag=  document.getElementsByTagName('input')[0].value
+        //   var txt=  document.getElementsByTagName('input')[1].value
+
+        //   var ele = document.createElement(tag)
+        //   console.log(ele);
+
+        //   var eletxt = document.createTextNode(txt)
+        //   console.log(eletxt);
+        //   ele.appendChild(eletxt)
+        //   console.log(ele);
+        // }
+            
+        
+        function Create(){
+          var tag= prompt("Enter TAg NAme")
+          var txt= prompt("Enter Text")
+        //   var txt=  document.getElementsByTagName('input')[1].value
+
+          var ele = document.createElement(tag)
+          console.log(ele);
+
+          var eletxt = document.createTextNode(txt)
+          console.log(eletxt);
+          ele.appendChild(eletxt)
+          console.log(ele);
+        }
+        Create()
+            
+    </script>
+</body>
+</html>

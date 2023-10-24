@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section style="display: flex;">
+        <div>
+            <input type="text" placeholder="Name" class="Name"><br>
+            <input type="text" placeholder="Email" class="Name"><br>
+            <input type="text" placeholder="Contact no" class="Name><br>
+            <input type="text" placeholder="Address" class="Name"><br>
+            <input type="text" placeholder="Education" class="Name"><br>
+            <input type="text" placeholder="Course Name" class="Name"><br>
+            <button onclick="call()">Submit</button>
+         </div>
+         <div>
+            <table style="border:1px solid black;">
+                <tr style="border: 1px solid black;">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Address</th>
+                    <th>Education</th>
+                    <th>Course Name</th>
+                
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+            </table>
+         </div>
+         <script>
+           function call(){
+            var name=document.getElementsByClassName ("Name")[0].value
+         document.getElementsByTagName('td')[0].innerHTML = name
+         var email=document.getElementsByClassName ("Name")[1].value
+         document.getElementsByTagName('td')[1].innerHTML = email
+         var contact=document.getElementsByClassName("Name")[2].value
+         document.getElementsByTagName('td')[2].innerHTML = contact
+         var address=document.getElementsByClassName("Name")(3).value
+         document.getElementsByTagName('td')[3].innerHTML = address
+         var course=document.getElementsByClassName("Name")[4].value
+         document.getElementsByTagName('td')[4].innerHTML = course
+           }
+           console.log(name);
+           console.log(email);
+           console.log(contact);
+           console.log(address);
+           console.log(course);
+        
+            
+         </script>
+    </section>
+   
+</body>
+</html>

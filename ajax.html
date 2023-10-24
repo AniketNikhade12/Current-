@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //Asyncronous  javascript and xml
+    //extensible markup language - create in tree structure form-->
+
+    <script>
+        function run(){
+            let xhr = new XMLHttpRequest()
+            // let xyz = function(){
+                
+            // }
+            
+            xhr.open("GET",'https://jsonplaceholder.typicode.com/users',true);
+            // http.send()
+            // var res= function(){
+                
+            // }
+            xhr.onreadystatechange = function(){
+                if (this.readystate == 4 && this.status== 200)
+                console.log(this.responseText);
+            }
+            xhr.send();
+              }
+        run();
+            </script>
+
+
+</body>
+</html>
